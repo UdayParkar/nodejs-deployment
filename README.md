@@ -46,6 +46,14 @@ ansible-playbook -i inventory.ini playbook.yml
 ### 5. Access Application
 Navigate to: `http://<PUBLIC_IP>:3007`
 
+## Deployment Screenshots
+
+### Ansible Deployment
+![Ansible Playbook Execution](images/cmd-op.jpeg)
+
+### Application Running
+![Node.js App Live](images/node-ansible-output.png)
+
 ## Project Structure
 ```
 nodejs-app-deployment/
@@ -58,13 +66,7 @@ nodejs-app-deployment/
 
 ## Configuration
 
-### Custom Terraform Variables
-Create `terraform/terraform.tfvars`:
-```hcl
-instance_type = "t2.micro"
-key_name      = "your-key-pair-name"  
-region        = "us-west-2"
-```
+Update variables directly in your Terraform files as needed for your specific AWS setup.
 
 ## Troubleshooting
 
