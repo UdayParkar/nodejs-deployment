@@ -6,11 +6,11 @@ This repository contains Terraform and Ansible code to deploy a Node.js applicat
 
 nodejs-app-deployment/
 ├── terraform/
-│ └── main.tf # Terraform script to create EC2 instance & security group
+│   └── main.tf          # Terraform script to create EC2 instance & security group
 ├── ansible/
-│ ├── inventory.ini # Ansible inventory file
-│ └── playbook.yml # Ansible playbook to deploy Node.js app
-└── .gitignore # Ignore sensitive and unnecessary files
+│   ├── inventory.ini    # Ansible inventory file
+│   └── playbook.yml     # Ansible playbook to deploy Node.js app
+└── .gitignore           # Ignore sensitive and unnecessary files
 
 > **Note:** The Node.js application itself is in a separate GitHub repository. Ansible will automatically clone it during deployment.
 
